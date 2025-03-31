@@ -310,7 +310,7 @@ def process_files_with_different_encodings(file_path=None):
 
 def use_github():
     # Change the return value based on your answer.
-    return "https://raw.githubusercontent.com/Sarthak-Sama/Temp-IIT-Assignment-Question/refs/heads/main/email.json"
+    return "https://raw.githubusercontent.com/carpeadiam/iitm1tds/refs/heads/main/email.json"
 
 
 def replace_across_files(file_path):
@@ -871,7 +871,8 @@ def host_your_portfolio_on_github_pages(email):
         "23f2000098@ds.study.iitm.ac.in": "https://github.com/YOGASWETHASANJAYGANDHI", # SD
         "23f2001413@ds.study.iitm.ac.in": "https://debjeetsingha.github.io/", # Debjeet
         "23f1002942@ds.study.iitm.ac.in": "https://aman-v114.github.io/demo_repo/index.html", # Aman
-        "21f3003062@ds.study.iitm.ac.in": "https://aditya-naidu.github.io/iit-githhubPages-testing/" # Aditya
+        "21f3003062@ds.study.iitm.ac.in": "https://aditya-naidu.github.io/iit-githhubPages-testing/", # Aditya
+        "24f2000074@ds.study.iitm.ac.in":"https://carpeadiam.github.io/", #Adi
     }
     answer = urls[email]
     return answer
@@ -888,7 +889,9 @@ def use_google_colab(email):
         "23f2001413@ds.study.iitm.ac.in": "07554", # Debjeet
         "23f1002942@ds.study.iitm.ac.in":"5aba1", # Aman
         "21f3003062@ds.study.iitm.ac.in": "518d1", # Aditya
-        "23f2000942@ds.study.iitm.ac.in":"e70b4" # Aditi
+        "23f2000942@ds.study.iitm.ac.in":"e70b4", # Aditi
+        "24f2000074@ds.study.iitm.ac.in":"3b454", #Adi
+        
         
     }
     answer = results[email]
@@ -2025,12 +2028,12 @@ def find_newest_github_user(location, followers, operator):
 
 
 def create_a_scheduled_github_action(
-    repo_owner="veershah1231",           
-    repo_name="tdsGA4",               
+    repo_owner="carpeadiam",           
+    repo_name="iitmgactions",               
     token={os.getenv("GITHUB_ACTION_TOKEN")},  # Set default to required token
-    email="23f3000709@ds.study.iitm.ac.in",  # Set default to required email
+    email="24f2000074@ds.study.iitm.ac.in",  # Set default to required email
     cron="30 2 * * *",                   
-    workflow_name="daily-commit.yml"     
+    workflow_name="blank2.yml"     
 ):
     # GitHub API base URL
     api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}"
