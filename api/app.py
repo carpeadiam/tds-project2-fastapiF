@@ -2,6 +2,7 @@ from multiprocessing import process
 import subprocess
 from fastapi import FastAPI, File, Form, UploadFile, HTTPException, Depends, Query, Request
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 import os
 import json
 from typing import Optional
